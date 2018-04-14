@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Фото Седоны</title>
+  <title>Форма отзывов</title>
 </head>
 <body>
 
@@ -24,11 +24,80 @@
 
   <main class="page-main page-review">
     <h1 class="page-review__title">Оставьте свой отзыв</h1>
+    <p class="page-review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <section class="page-review__form">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" id="filter-form-id">
 
-    <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    <section class="form">
+        <fieldset>
+          <legend>Представьтесь:</legend>
+          <div>
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" value="Петр" required>
+          </div>
+          <div>
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" id="surname" value="Иванов" required>
+          </div>
+          <div>
+            <label for="middle-name">Отчество:</label>
+            <input type="text" name="middle-name" id="middle-name" value="Александрович" required>
+          </div>
+        </fieldset>
 
-  </section>
+        <fieldset>
+          <legend>Контактная информация:</legend>
+          <div>
+            <label for="tel">Контактный телефон<sup>*</sup>:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Введите телефон">
+          </div>
+          <div>
+            <label for="email">Электронная почта<sup>*</sup>:</label>
+            <input type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ваше общее впечатление:</legend>
+          <div>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="impression" id="positive" value="" checked>
+            <label for="positive">Скорее положительное</label>
+          </div>
+          <div>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="impression" id="negative" value="">
+            <label for="negative">Скорее отрицательное</label>
+          </div>
+          <div>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="impression" id="neutral" value="">
+            <label for="neutral">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Посещенные достопримечательности:</legend>
+          <div>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bridge" id="bridge" value="" checked>
+            <label for="bridge">Мост Дьявола</label>
+          </div>
+          <div>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bell" id="bell" value="" checked>
+            <label for="bell">Гора-Колокол</label>
+          </div>
+          <div>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="park" id="park" value="" checked>
+            <label for="park">Слайд-парк</label>
+          </div>
+          <div>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="rocks" id="rocks" value="">
+            <label for="rocks">Красные скалы</label>
+          </div>
+        </fieldset>
+
+        <label for="emotions">Опишите свои эмоции:</label>
+        <textarea name="letter" id="emotions" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+        <button class="button" type="submit">Отправить отзыв</button>
+      </form>
+
+    </section>
 
   </main>
 
