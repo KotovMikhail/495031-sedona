@@ -7,11 +7,11 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Седона">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Седона">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav_list site-list">
         <li class="site-list__item"><a>Главная</a></li>
         <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
@@ -19,16 +19,18 @@
         <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">Html Academy</a></li>
       </ul>
     </nav>
-    <img class="page-header__welcome-image" src="http://placehold.it/150x100" width="768" height="389" alt="Добро пожаловать в Седону">
+    <div class="page-header__image-wrapper">
+      <img class="page-header__image" src="http://placehold.it/150x100" width="768" height="389" alt="Добро пожаловать в Седону">
+    </div>
   </header>
 
   <main class="page-main">
     <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-    <p class="advantages__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <p class="page-main__title-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
+      <div class="advantages__list">
+        <div class="advantages__item">
           <p class="advantages__item-name">Настоящий городок</p>
           <div class="advantages__number">— №1 —</div>
           <p class="advantages__item-details">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -44,36 +46,39 @@
               <p class="features-list__item-recomendation">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
-        </li>
-        <li class="advantages__item">
+        </div>
+        <div class="advantages__item">
           <p class="advantages__item-name">Там есть мост дьявола</p>
           <div class="advantages__number">— №2 —</div>
           <p class="advantages__item-details">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           <img class="advantages_photo" src="http://placehold.it/150x100"  width="520" height="260" alt="Фото моста дьявола">
-        </li>
-        <li class="advantages__item">
+        </div>
+        <div class="advantages__item">
           <p class="advantages__item-name">Небольшая площадь</p>
           <div class="advantages__number">— №3 —</div>
           <p class="advantages__item-details">Все интересные места находятся очень близко</p>
-        </li>
-        <li class="advantages__item">
+        </div>
+        <div class="advantages__item">
           <p class="advantages__item-name">Красивая дорога</p>
           <div class="advantages__number">— №4 —</div>
           <p class="advantages__item-details">Ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantages__item">
+        </div>
+        <div class="advantages__item">
           <p class="advantages__item-name">Мало туристов</p>
           <div class="advantages__number">— №5 —</div>
           <p class="advantages__item-details">Большинство едет в гранд каньон и толпится там</p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <section class="book">
       <h2 class="book__title">Заинтересовались?</h2>
       <p class="book__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="book__search-button" href="#">Найти гостиницу</a>
-      <img class="book__map-image" src="http://placehold.it/150x100" width="320" height="350" alt="Карта поиска">
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта поиска</h2>
+      <img class="map__image" src="http://placehold.it/150x100" width="320" height="350" alt="Карта поиска">
     </section>
   </main>
 
