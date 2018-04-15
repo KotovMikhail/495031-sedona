@@ -9,7 +9,7 @@
   <header class="page-header">
     <nav class="main-nav">
       <a class="main-nav__logo logo">
-        <img class="logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Седона">
+        <img class="logo__image" src="http://placehold.it/150x100" width="102" height="83" alt="Седона">
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav_list site-list">
@@ -34,15 +34,15 @@
         <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="name">Имя<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Петр" required>
+            <input class="form__input-text" type="text" name="name" id="name" placeholder="Петр" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            <input class="form__input-text" type="text" name="surname" id="surname" placeholder="Иванов" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="middle-name">Отчество:</label>
-            <input class="form__input" type="text" name="middle-name" id="middle-name" placeholder="Александрович">
+            <input class="form__input-text" type="text" name="middle-name" id="middle-name" placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
@@ -52,12 +52,12 @@
         <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
-          </li class="form__item">
+            <input class="form__input-tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+          </li>
           <li class="form__item">
             <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="form__input" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required>
-          </li class="form__item">
+            <input class="form__input-email" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required>
+          </li>
         </ul>
       </fieldset>
 
@@ -65,17 +65,17 @@
         <legend class="form__legend">Ваше общее впечатление:</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input visually-hidden" type="radio" name="impression" id="positive" value="" checked>
+            <input class="form__input-radio visually-hidden" type="radio" name="impression" id="positive" value="" checked>
             <label class="form__label" for="positive">Скорее положительное</label>
-          </li class="form__item">
+          </li>
           <li class="form__item">
-            <input class="form__input visually-hidden" type="radio" name="impression" id="negative" value="">
+            <input class="form__input-radio visually-hidden" type="radio" name="impression" id="negative" value="">
             <label class="form__label" for="negative">Скорее отрицательное</label>
-          </li class="form__item">
+          </li>
           <li class="form__item">
-            <input class="form__input visually-hidden" type="radio" name="impression" id="neutral" value="">
+            <input class="form__input-radio visually-hidden" type="radio" name="impression" id="neutral" value="">
             <label class="form__label" for="neutral">Затрудняюсь ответить</label>
-          </li class="form__item">
+          </li>
         </ul>
       </fieldset>
 
@@ -83,21 +83,21 @@
         <legend class="form__legend">Посещенные достопримечательности:</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input input-bridge visually-hidden" type="checkbox" name="bridge" id="bridge" value="" checked>
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="bridge" id="bridge" value="" checked>
             <label class="form__label" for="bridge">Мост Дьявола</label>
-          </li class="form__item">
+          </li>
           <li class="form__item">
-            <input class="form__input input-bell visually-hidden" type="checkbox" name="bell" id="bell" value="" checked>
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="bell" id="bell" value="" checked>
             <label class="form__label" for="bell">Гора-Колокол</label>
-          </li class="form__item">
+          </li>
           <li class="form__item">
-            <input class="form__input visually-hidden" type="checkbox" name="park" id="park" value="" checked>
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="park" id="park" value="" checked>
             <label class="form__label" for="park">Слайд-парк</label>
-          </li class="form__item">
+          </li>
           <li class="form__item">
-            <input class="visually-hidden" type="checkbox" name="rocks" id="rocks" value="">
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="rocks" id="rocks" value="">
             <label class="form__label" for="rocks">Красные скалы</label>
-          </li class="form__item">
+          </li>
         </ul>
       </fieldset>
       <div class="form__emotions-wrapper">
@@ -129,6 +129,23 @@
       <a class="button copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
+<section class="modal failure">
+  <h2 class="visually-hidden">Поля формы незаполненны!</h2>
+  <div class="modal__wrapper">
+    <p class="failure__warning">Что-то пошло не так!</p>
+    <p class="failure__advice">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="button button-ok" type="button">Ok</button>
+  </div>
+</section>
+
+<section class="modal success">
+  <h2 class="visually-hidden">Поля формы заполнены!</h2>
+  <div class="modal__wrapper">
+    <p class="success__send-review">Ваш отзыв отправлен!</p>
+    <p class="success__gratitude">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="button button-close" type="button">Закрыть окно</button>
+  </div>
+</section>
 
 </body>
 </html>
