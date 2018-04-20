@@ -7,6 +7,7 @@
   padding: 60px 28px 43px;
   background-color: #eeeeee;
   outline: 2px solid brown;
+  text-align: center;
     &--bg {
     background-color: #81b3d2 ;
     color: #ffffff;
@@ -55,4 +56,39 @@
   padding-bottom: 40px;
   padding-left: 70px;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+  .advantages__item  {
+    width: 256px;
+    box-sizing: border-box;
+  }
+
+  .advantages__photo-wrapper {
+    flex-grow: 1;
+  }
+
+  .advantages__photo {
+    width: 100%;
+  }
+  .advantages__features {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .advantages__item  {
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .advantages__photo-wrapper {
+   width: 800px;
+   box-sizing: border-box;
+  }
 }

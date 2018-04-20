@@ -3,8 +3,15 @@
 }
 
 .page-header__image {
-  width: 100%;
   min-height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__image {
+    min-height: 518px;
+    background-size: cover ;
+  }
 }

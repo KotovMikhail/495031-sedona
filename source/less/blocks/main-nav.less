@@ -1,3 +1,23 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 55px;
   outline: 2px solid green;
+}
+
+.main-nav__logo {
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 55px;
+  }
 }

@@ -3,6 +3,7 @@
 }
 
 .page-main__title {
+  width: 265px;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
@@ -23,7 +24,7 @@
 }
 
 .page-main__title-wrapper {
-  padding: 42px 33px 32px;
+  padding: 42px 30px 32px;
   text-align: center;
   &--mod {
     padding-bottom: 23px;
@@ -32,4 +33,20 @@
 
 .page-main__form {
   padding: 22px 20px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-main__title {
+    min-width: 400px;
+  }
+
+}
+
+  @media (min-width: @desktop-width) {
+
 }
