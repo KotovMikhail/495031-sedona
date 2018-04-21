@@ -31,41 +31,57 @@
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
         <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
-            <p class="gallery__photo-description">Неродные просторы</p>
-            <cite class="gallery__photo-author">Автор фото: Борис</cite>
-            <button class="gallery__button-like button">
-              <span class="visually-hidden">Понравилось</span>
-              <span class="button__likes-counter"> 1350</span>
-            </button>
+          <li class="gallery__item gallery__item--tablet">
+            <div class="gallery__photo-wrapper gallery__photo-wrapper--big">
+              <img class="gallery__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+            </div>
+            <div class="gallery__title-description">
+              <p class="gallery__title">Неродные просторы</p>
+              <cite class="gallery__author">Автор фото: Борис</cite>
+              <button class="gallery__button-like button">
+                <span class="visually-hidden">Понравилось</span>
+                <span class="button__likes-counter"> 1350</span>
+              </button>
+            </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-            <p class="gallery__photo-description">Местная растительность</p>
-            <cite class="gallery__photo-author">Автор фото: Сергей</cite>
-            <button class="gallery__button-like button">
-              <span class="visually-hidden">Понравилось</span>
-              <span class="button__likes-counter"> 143</span>
-            </button>
+          <li class="gallery__item gallery__item--small">
+            <div class="gallery__photo-wrapper">
+              <img class="gallery__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+            </div>
+            <div class="gallery__title-description">
+              <p class="gallery__title">Местная растительность</p>
+              <cite class="gallery__author">Автор фото: Сергей</cite>
+              <button class="gallery__button-like button">
+                <span class="visually-hidden">Понравилось</span>
+                <span class="button__likes-counter"> 143</span>
+              </button>
+            </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-            <p class="gallery__photo-description">Дорога на север</p>
-            <cite class="gallery__photo-author">Автор фото: Петр</cite>
-            <button class="gallery__button-like button">
-              <span class="visually-hidden">Понравилось</span>
-              <span class="button__likes-counter"> 96</span>
-            </button>
+          <li class="gallery__item gallery__item--small">
+            <div class="gallery__photo-wrapper">
+              <img class="gallery__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+            </div>
+            <div class="gallery__title-description">
+              <p class="gallery__title">Дорога на север</p>
+              <cite class="gallery__author">Автор фото: Петр</cite>
+              <button class="gallery__button-like button">
+                <span class="visually-hidden">Понравилось</span>
+                <span class="button__likes-counter"> 96</span>
+              </button>
+            </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__photo" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
-            <p class="gallery__photo-description">Мост дьявола</p>
-            <cite class="gallery__photo-author">Автор фото: Антон</cite>
-            <button class="gallery__button-like button">
-              <span class="visually-hidden">Понравилось</span>
-              <span class="button__likes-counter"> 254</span>
-            </button>
+          <li class="gallery__item gallery__item--small">
+            <div class="gallery__photo-wrapper">
+              <img class="gallery__photo" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+            </div>
+            <div class="gallery__title-description">
+              <p class="gallery__title">Мост дьявола</p>
+              <cite class="gallery__author">Автор фото: Антон</cite>
+              <button class="gallery__button-like button">
+                <span class="visually-hidden">Понравилось</span>
+                <span class="button__likes-counter"> 254</span>
+              </button>
+            </div>
           </li>
         </ul>
       </section>
@@ -74,7 +90,7 @@
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <video poster="img/video-mobile@1x.jpg" preload="none" width="320" height="201"></video>
+        <video class="video__poster" poster="img/video-mobile@1x.jpg" preload="none" width="320" height="201"></video>
         <div class="video__controls control">
           <div class="control__range">
             <div class="control__scale">
