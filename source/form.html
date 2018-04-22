@@ -10,7 +10,10 @@
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
@@ -51,14 +54,14 @@
 
         <fieldset class="form__fieldset form__fieldset--stretch">
           <legend class="form__legend">Контактная информация:</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-              <input class="form__input form__input-tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+          <ul class="form__list form__list--desktop">
+            <li class="form__item form__item--desktop">
+              <label class="form__label" for="tel"><span class="form__label-hidden">Контактный</span>телефон<sup>*</sup>:</label>
+              <input class="form__input form__input--desktop-contacts form__input--icon" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--desktop">
               <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-              <input class="form__input form__input-email" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required>
+              <input class="form__input form__input--desktop-contacts form__input--icon" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>

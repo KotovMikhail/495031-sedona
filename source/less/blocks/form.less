@@ -14,8 +14,6 @@
 }
 
 .form__label {
-  margin-right: 15px;
-  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
@@ -37,7 +35,10 @@
 }
 
 .form__label--visited {
+  font-size: 18px;
+  line-height: 26px;
   color: #000000;
+  font-weight: bold;
 }
 
 .form__item {
@@ -64,6 +65,12 @@
   background-color: #f2f2f2;
   border: 0;
   box-sizing: border-box;
+}
+
+.form__input--icon::before {
+  background-color: #e6e6e6;
+  background: url("../img/icon-phone.svg");
+
 }
 
 .form__input::placeholder {
@@ -149,6 +156,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 35px;
+    outline: 2px dashed red;
   }
 
   .form__input--visited {
@@ -167,6 +175,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .form__label-hidden {
+    display: none;
+  }
+
+  .form__label {
+    margin: 0;
   }
 
   .form__fieldset {
@@ -191,7 +207,22 @@
     background-color: lightblue;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+  }
+
+  .form__list--desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__item--desktop {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form__input--desktop-contacts {
+    width: 100%;
   }
 
   .form__emotions-wrapper {
