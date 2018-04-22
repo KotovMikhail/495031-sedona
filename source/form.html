@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Форма отзывов</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <div class="page-wrapper">
@@ -33,8 +33,7 @@
         <p class="page-main__title-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post" id="filter-form-id">
-
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--center-text">
           <legend class="form__legend">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item form__item--position">
@@ -42,7 +41,7 @@
               <input class="form__input form__input-text" type="text" name="name" id="name" placeholder="Петр" required>
             </li>
             <li class="form__item form__item--position">
-              <label class="form__label" for="surname">Имя<sup>*</sup>:</label>
+              <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
               <input class="form__input form__input-text" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
             <li class="form__item form__item--position">
@@ -56,11 +55,11 @@
           <legend class="form__legend">Контактная информация:</legend>
           <ul class="form__list form__list--desktop">
             <li class="form__item form__item--desktop">
-              <label class="form__label" for="tel"><span class="form__label-hidden">Контактный</span>телефон<sup>*</sup>:</label>
+              <label class="form__label form__label--margin-left" for="tel"><span class="form__label-hidden">Контактный</span>телефон<sup>*</sup>:</label>
               <input class="form__input form__input--desktop-contacts form__input--icon" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
             </li>
             <li class="form__item form__item--desktop">
-              <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <label class="form__label form__label--margin-left" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="form__input form__input--desktop-contacts form__input--icon" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required>
             </li>
           </ul>
@@ -84,7 +83,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--visited">
+        <fieldset class="form__fieldset form__fieldset--visited form__fieldset--center-text">
           <legend class="form__legend">Посещенные достопримечательности:</legend>
           <ul class="form__list form__list--visited">
             <li class="form__item form__item--visited">
