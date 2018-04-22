@@ -1,12 +1,10 @@
 .advantages {
-  outline: 2px solid blue;
   text-transform: uppercase;
 }
 
 .advantages__item {
   padding: 60px 28px 43px;
   background-color: #eeeeee;
-  outline: 2px solid brown;
   text-align: center;
     &--bg {
     background-color: #81b3d2 ;
@@ -18,7 +16,7 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
@@ -50,7 +48,6 @@
 
 .advantages__features {
   margin: 0;
-  outline: 2px solid pink;
   padding-top: 40px;
   padding-right: 50px;
   padding-bottom: 40px;
@@ -59,9 +56,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__list {
+  .advantages__item-wrapper {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.advantages__item-wrapper--reverse {
+  flex-direction: row-reverse;
 }
 
   .advantages__item  {

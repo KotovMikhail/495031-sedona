@@ -1,4 +1,6 @@
 .button {
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
@@ -6,6 +8,8 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .button__likes-counter {
@@ -24,10 +28,19 @@
   font-size: 21px;
 }
 
-.button__button-ok {
+.button-ok {
+  font-size: 18px;
+  padding: 20px 78px;
+}
+
+.button-close {
+  width: 100%;
+  padding: 17px 65px;
   font-size: 18px;
 }
 
-.button__button-close {
-  font-size: 18px;
+@media (min-width: @tablet-width) {
+  .button-ok {
+    width: 100%;
+  }
 }
