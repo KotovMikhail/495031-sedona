@@ -59,13 +59,40 @@
   cursor: pointer;
 }
 
+.form__input-radio + .form__label:hover::before {
+  background-color: #e5e5e5;
+}
+
 .form__input-radio:checked + .form__label::before {
-  content: "\2022";
-  text-align: center;
-  font-size: 80px;
-  text-align: center;
-  line-height: 50px;
-  color: #333333;
+  background-color: #e5e5e5;
+}
+
+.form__input-radio:disabled + .form__label::before {
+  background-color: #d5d5d5;
+}
+
+.form__input-radio:checked + .form__label::after {
+  content: "";
+  position: absolute;
+  top: 51%;
+  left: -47px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  background-color:  #333333;
+}
+
+.form__input-radio:checked:disabled + .form__label::after {
+  content: "";
+  position: absolute;
+  top: 51%;
+  left: -47px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
 }
 
 .form__input-checkbox + .form__label::before {
@@ -75,6 +102,7 @@
   left: -75px;
   width: 55px;
   height: 55px;
+  border-radius: 5px;
   background-color: #f2f2f2;
 }
 
@@ -85,6 +113,31 @@
   width: 55px;
   height: 55px;
   background-color: #f2f2f2;
+}
+
+.form__input-checkbox + .form__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form__input-checkbox:checked + .form__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form__input-checkbox:checked + .form__label::before {
+  background-color: #e5e5e5;
+}
+
+.form__input-checkbox:disabled + .form__label::before {
+  background-color: #d5d5d5;
+}
+
+.form__input-checkbox:disabled:checked + .form__label::before {
+  background: url("../img/icon-tick-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55px;
+  height: 55px;
+  background-color: #d5d5d5;
 }
 
 .form__label--bold {
@@ -106,7 +159,6 @@
 .form__item--position {
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 .form__list {
@@ -126,6 +178,16 @@
   background-color: #f2f2f2;
   border: 0;
   box-sizing: border-box;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+}
+.form__input-position {
+
 }
 
 .form__input--icon::before {
