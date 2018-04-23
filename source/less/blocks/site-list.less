@@ -13,7 +13,7 @@
 
 .site-list__link {
   display: block;
-  padding: 7px 50px;
+  padding: 15px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   font-size: 18px;
@@ -26,9 +26,13 @@
 
 @media (min-width: @tablet-width) {
   .site-list__item {
+    width: 20%;
     background-color: #ffffff;
   }
 
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
   .site-list__link {
     color: #000000;
     font-size: 14px;

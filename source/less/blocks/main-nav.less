@@ -1,12 +1,17 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  min-height: 55px;
+  padding-bottom: 56px;
   position: relative;
 }
 
+.main-nav__list {
+  display: none;
+}
+
 .main-nav__logo {
-  position: relative;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .main-nav__toggle {
@@ -30,13 +35,15 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
+    position: relative;
+    padding-bottom: 0;
     margin: 0;
   }
   .main-nav__list {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    min-height: 55px;
+  }
+  .main-nav__logo {
+
   }
 }

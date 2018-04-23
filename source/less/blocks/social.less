@@ -1,12 +1,29 @@
 .social__list {
   .reset-list();
-
 }
 
-.social__list{
-  width: 150px;
-  min-height: 50px;
+.social__item {
+  vertical-align: middle;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 6px;
   background-color: #81b3d2;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }
 
 @media (min-width: @tablet-width) {
