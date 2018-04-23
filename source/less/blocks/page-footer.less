@@ -1,11 +1,10 @@
 .page-footer {
-  outline: 2px solid blue;
-  padding: 40px 85px 32px;
+  padding: 40px 60px 32px;
 }
 
-.page-footer__hashtag {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

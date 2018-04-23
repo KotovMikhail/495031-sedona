@@ -1,12 +1,11 @@
 .advantages {
-  outline: 2px solid blue;
   text-transform: uppercase;
 }
 
 .advantages__item {
   padding: 60px 28px 43px;
   background-color: #eeeeee;
-  outline: 2px solid brown;
+  text-align: center;
     &--bg {
     background-color: #81b3d2 ;
     color: #ffffff;
@@ -17,7 +16,7 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
@@ -49,10 +48,46 @@
 
 .advantages__features {
   margin: 0;
-  outline: 2px solid pink;
   padding-top: 40px;
   padding-right: 50px;
   padding-bottom: 40px;
   padding-left: 70px;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item-wrapper {
+    display: flex;
+}
+
+.advantages__item-wrapper--reverse {
+  flex-direction: row-reverse;
+}
+
+  .advantages__item  {
+    width: 256px;
+    box-sizing: border-box;
+}
+
+  .advantages__photo-wrapper {
+    flex-grow: 1;
+}
+
+  .advantages__photo {
+    width: 100%;
+  }
+  .advantages__features {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item  {
+    width: 400px;
+    box-sizing: border-box;
+}
+  .advantages__photo-wrapper {
+    width: 800px;
+    box-sizing: border-box;
+  }
 }
