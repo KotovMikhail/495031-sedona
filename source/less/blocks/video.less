@@ -1,69 +1,95 @@
 .video {
+  position: relative;
   background-color: #ffffff;
 }
 
 .video__title-wrapper {
-  padding: 38px 42px;
+  padding: 35px 40px 40px;
   text-transform: uppercase;
 }
 
 .video__title {
-  display: block;
+  width: 245px;
+  font-size: 18px;
+  line-height: 26px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .video__description {
+  text-align: center;
   margin: 0;
   color: #333333;
 }
 
+.video__controls {
+  position: absolute;
+  bottom: -62px;
+  left: 20px;
+  width: 280px;
+  height: 115px;
+}
+
+
 @media (min-width: @tablet-width) {
   .video {
     padding: 0 60px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+  }
+
+  .video__title {
+    width: auto;
+    padding: 0;
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 
   .video__title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 66px 116px 76px;
   }
 
   .video__poster {
+    background-image: url("../img/video-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 648px;
     height: 500px;
   }
 
   .video__controls {
     width: 648px;
-    height: 95px;
-    background-color: lightgrey;
+    bottom: -16px;
+    left: 160px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .video {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 88px;
   }
+
+  .video__title {
+    margin-bottom: 30px;
+  }
+
+  .video__title-wrapper {
+    padding: 70px 0 75px;
+  }
+
   .video__poster {
     width: 800px;
     height: 500px;
   }
 
-  .video__controls {
-    position: absolute;
-    bottom: 0;
-    width: 800px;
-    height: 95px;
-    background-color: rgba(0, 0, 0, 0.6);
+  .video__description {
+    width: 420px;
   }
 }
