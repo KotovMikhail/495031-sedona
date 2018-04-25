@@ -16,7 +16,22 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 36px 60px;
   }
+
+  .page-footer__hashtag {
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+  padding: 35px 120px;
+}
 }
