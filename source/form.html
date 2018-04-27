@@ -21,16 +21,18 @@
           <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
         </a>
       </nav>
-      <div class="page-header__image page-header__image--other-page"></div>
+      <div class="page-header__image page-header__image--other-page">
+        <img  class="page-header__text-logo page-header__text-logo--other-page" src="../img/text-sedona.svg" width="229" height="39" alt="Текст логотипа">
+      </div>
     </header>
 
     <main class="page-main">
-      <div class="page-main__title-wrapper page-main__title-wrapper--mod">
-        <h1 class="page-main__title">Оставьте свой отзыв</h1>
+      <div class="page-main__title-wrapper page-main__title-wrapper--form">
+        <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
         <p class="page-main__title-description page-main__title-description--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post" id="filter-form-id">
-        <fieldset class="form__fieldset form__fieldset--center-text">
+        <fieldset class="form__fieldset form__fieldset--">
           <legend class="form__legend">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item form__item--position">
@@ -48,8 +50,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--stretch">
-          <legend class="form__legend"><span class="form__text-stroke">Контактная информация:</span></legend>
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__legend form__legend--contacts"><span class="form__text-stroke">Контактная информация:</span></legend>
           <ul class="form__list form__list--desktop">
             <li class="form__item form__item--index form__item--desktop">
               <label class="form__label form__label--index" for="tel"><span class="form__label-hidden">Контактный</span>телефон<sup>*</sup>:</label>
@@ -59,7 +61,7 @@
               </div>
             </li>
             <li class="form__item form__item--index form__item--desktop">
-              <label class="form__label form__label--index" for="email">Электронная почта<sup>*</sup>:</label>
+              <label class="form__label form__label--index form__label--margin-reset" for="email">Электронная почта<sup>*</sup>:</label>
               <div class="input-wrapper">
                 <input class="form__input form__input--index" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required>
                 <div class="form__input-icon-mail"></div>
@@ -109,7 +111,7 @@
         </fieldset>
         <div class="form__emotions-wrapper">
           <label class="form__label form__label--textarea" for="emotions"><span class="form__text-stroke">Опишите свои эмоции:</span></label>
-          <textarea class="form__review-field" name="emotions" id="emotions" cols="20" rows="4" placeholder="Опишите подробно все свои восторги "></textarea>
+          <textarea class="form__review-field" name="emotions" id="emotions" cols="10" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
           <button class="button button__send-form" type="submit">Отправить отзыв</button>
           <small class="form__legend-sup">
             <sup>*</sup> &ndash; Обязательные поля
