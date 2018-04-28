@@ -304,13 +304,23 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .form__legend {
-    font-size: 21px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .form__legend--contacts {
+    margin-bottom: 20px;
+  }
+
+  .form__legend--visited {
+    margin-bottom: 57px;
+    text-align: center;
   }
 
   .form__legend--tablet-width {
@@ -327,13 +337,13 @@
   }
 
   .form__item--index {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
   }
 
   .form__label--index {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .input-wrapper {
@@ -348,7 +358,7 @@
     border-bottom: none;
     width: 265px;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 
   .form__fieldset--order {
@@ -357,23 +367,30 @@
   }
 
   .form__fieldset--contacts {
-    text-align: center;
     width: 100%;
-  }
-
-  .form__label--visited {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
+    margin-bottom: 31px;
+    text-align: center;
   }
 
   .form__item {
     width: 100%;
+    margin-bottom: 21px;
     text-align: left;
   }
 
+  .form__item--icon-space {
+    padding-left: 77px;
+    padding-top: 4px;
+    margin-bottom: 48px;
+  }
+
   .form__fieldset--visited {
-    padding-top: 15px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-top: 0;
+    padding-right: 17px;
+    padding-bottom: 0;
+    padding-left: 172px;
     text-align: center;
   }
 
@@ -381,25 +398,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 140px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .form__item--visited {
-    width: 210px;
+    width: 200px;
     margin: 0;
     padding: 0;
-    margin-bottom: 68px;
-  }
-
-  .form__input--visited {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 62px;
   }
 
   .form__label--visited {
-    margin: 0;
-    padding: 0;
+    width: 130px;
+    margin-left: 2px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
   }
 
   .form__emotions-wrapper {
@@ -414,12 +429,13 @@
 
   .form__review-field {
     width: 100%;
+    margin-bottom: 52px;
   }
 
   .form__legend-sup {
     display: block;
-    width: 165px;
-    margin-top: 20px;
+    width: 160px;
+    margin-top: 16px;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
@@ -447,10 +463,20 @@
   .form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 65px;
   }
 
   .form__legend {
     text-align: left;
+  }
+
+  .form__legend--tablet-width {
+    margin-left: 140px;
+    text-align: center;
+  }
+
+  .form__legend--contacts {
+    margin-bottom: 72px;
   }
 
   .form__text-stroke::before,
@@ -466,6 +492,11 @@
     margin: 0;
   }
 
+  .form__label--visited {
+    width: 130px;
+    margin-left: 2px;
+  }
+
   .form__label--name {
     margin-right: 15px;
   }
@@ -476,10 +507,14 @@
 
   .form__fieldset--contacts {
     width: 100%;
+    margin-bottom: 55px;
   }
 
   .form__fieldset--visited {
     width: 100%;
+    margin-bottom: 84px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__item--icon-space {
@@ -489,18 +524,25 @@
   .form__list--visited {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 0;
-    margin-bottom: 90px;
-    justify-content: space-between;
+    margin: 0;
+    justify-content: normal;
   }
 
   .form__legend--visited {
+    margin-bottom: 54px;
     text-align: center;
   }
 
   .form__item--visited {
-    width: 240px;
+    width: 260px;
     margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form__item--visited:last-child {
+    width: 180px;
+    margin: 0;
+    padding-left: 52px;
     box-sizing: border-box;
   }
 
@@ -521,10 +563,13 @@
     margin-right: 15px;
   }
 
+  .form__input {
+    width: 100%;
+  }
+
   .form__input--index {
     width: 258px;
   }
-
 
   .form__emotions-wrapper {
     width: 100%;
@@ -532,5 +577,9 @@
 
   .form__label--textarea {
     margin-bottom: 57px;
+  }
+
+  .form__review-field {
+    margin-bottom: 50px;
   }
 }
