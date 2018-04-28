@@ -73,13 +73,23 @@
   margin: 0;
   margin-bottom: 42px;
   padding: 15px 9px 15px 20px;
-  border: none;
   background-color: #f2f2f2;
+  border: 4px solid #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
   box-sizing: border-box;
+}
+
+.form__review-field:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.form__review-field:focus {
+  background-color: #ffffff;
+  border-color: #e5e5e5;
 }
 
 .form__label--name {
@@ -252,23 +262,23 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding: 16px 0 16px 20px;
+  padding: 12px 0 12px 20px;
   background-color: #f2f2f2;
-  border: 0;
+  border: 4px solid #f2f2f2;
   box-sizing: border-box;
   &:hover {
     background-color: #e5e5e5;
+    border-color: #e5e5e5;
   }
   &:focus {
+    outline: none;
     background-color: #ffffff;
-    outline: 4px solid #e5e5e5;
-    outline-offset: -4px;
+    border-color: #e5e5e5;
   }
 }
 
 .form__input:focus ~ .form__label::before {
   outline: 1px dotted #000000;
-  outline-offset: 2px;
 }
 
 .form__input-icon-phone {
