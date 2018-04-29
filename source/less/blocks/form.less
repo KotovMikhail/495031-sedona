@@ -5,6 +5,7 @@
   padding-right: 20px;
   padding-left: 20px;
   border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
 }
 
 .form__fieldset--name {
@@ -16,9 +17,9 @@
 }
 
 .form__fieldset--contacts {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   padding-top: 0;
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 }
 
 .form__fieldset--visited {
@@ -28,8 +29,8 @@
 }
 
 .form__fieldset--impression {
-  margin-bottom: 16px;
-  padding-bottom: 46px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .form__legend {
@@ -70,6 +71,7 @@
 }
 
 .form__label {
+  height: 26px;
   position: relative;
   text-transform: uppercase;
   font-size: 18px;
@@ -125,7 +127,7 @@
 .form__item--contacts {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .form__item--contacts:last-child {
@@ -346,6 +348,36 @@
     margin-bottom: 60px;
   }
 
+  .form__fieldset {
+    width: 265px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .form__fieldset--name {
+    margin-bottom: 70px;
+  }
+
+  .form__fieldset--impression {
+    order: -1;
+    padding-bottom: 0;
+  }
+
+  .form__fieldset--contacts {
+    width: 100%;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  .form__fieldset--visited {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0;
+    text-align: center;
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
   .form__legend {
     margin-top: 0;
     margin-bottom: 55px;
@@ -358,79 +390,13 @@
   }
 
   .form__legend--visited {
-    margin-bottom: 57px;
+    margin-bottom: 53px;
     text-align: center;
   }
 
   .form__legend--impression {
     width: 290px;
     margin-bottom: 68px;
-  }
-
-  .form__list {
-    padding: 0;
-  }
-
-  .form__label {
-    margin-bottom: 0;
-  }
-
-  .form__item--contacts {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form__label--contacts {
-    margin-bottom: 6px;
-  }
-
-  .input-wrapper {
-    display: flex;
-  }
-
-  .form__input--contacts {
-    width: 590px;
-  }
-
-  .form__fieldset {
-    border-bottom: none;
-    width: 265px;
-    padding: 0;
-    margin-bottom: 38px;
-  }
-
-  .form__fieldset--impression {
-    order: -1;
-    padding-bottom: 0;
-  }
-
-  .form__fieldset--contacts {
-    width: 100%;
-    margin-bottom: 31px;
-    text-align: center;
-  }
-
-  .form__item {
-    width: 100%;
-    margin-bottom: 21px;
-    text-align: left;
-  }
-
-  .form__item--icon-space {
-    padding-left: 77px;
-    padding-top: 4px;
-    margin-bottom: 48px;
-  }
-
-  .form__fieldset--visited {
-    width: 100%;
-    margin-bottom: 12px;
-    padding-top: 0;
-    padding-right: 17px;
-    padding-bottom: 0;
-    padding-left: 172px;
-    text-align: center;
   }
 
   .form__list--visited {
@@ -441,19 +407,56 @@
     margin-left: 0;
   }
 
+  .form__label {
+    margin-bottom: 0;
+  }
+
+  .form__label--contacts {
+    margin-bottom: 10px;
+  }
+
+  .form__label--visited {
+    width: auto;
+    padding-left: 80px;
+    margin-left: 2px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .form__list {
+    padding: 0;
+  }
+
+  .form__item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .form__item--contacts {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 22px;
+  }
+
+  .form__item--impression {
+    margin-bottom: 55px;
+  }
+
   .form__item--visited {
-    width: 200px;
+    width: 197px;
     margin: 0;
     padding: 0;
     margin-bottom: 62px;
   }
 
-  .form__label--visited {
-    width: 130px;
-    margin-left: 2px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
+  .input-wrapper {
+    display: flex;
+  }
+
+  .form__input--contacts {
+    width: 590px;
   }
 
   .form__emotions-wrapper {
@@ -468,7 +471,7 @@
 
   .form__review-field {
     width: 100%;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
   .form__legend-sup {
@@ -509,6 +512,11 @@
     text-align: left;
   }
 
+  .form__legend--impression {
+    margin-bottom: 71px;
+    padding-left: 81px;
+  }
+
   .form__legend--tablet-width {
     margin-left: 140px;
     text-align: center;
@@ -532,7 +540,6 @@
   }
 
   .form__label--visited {
-    width: 130px;
     margin-left: 2px;
   }
 
@@ -556,15 +563,21 @@
     padding-right: 0;
   }
 
-  .form__item--icon-space {
-    padding-left: 75px;
+  .form__item--impression {
+    margin-bottom: 53px;
+  }
+
+  .form__list--desktop {
+    justify-content: space-between;
+    width: 100%;
   }
 
   .form__list--visited {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
     margin: 0;
-    justify-content: normal;
   }
 
   .form__legend--visited {
@@ -573,15 +586,8 @@
   }
 
   .form__item--visited {
-    width: 260px;
+    width: auto;
     margin: 0;
-    box-sizing: border-box;
-  }
-
-  .form__item--visited:last-child {
-    width: 180px;
-    margin: 0;
-    padding-left: 52px;
     box-sizing: border-box;
   }
 
