@@ -22,10 +22,6 @@
   font-weight: bold;
 }
 
-.advantages__item-details {
-  width: 200px;
-}
-
 .advantages__number {
   width: 50px;
   margin-top: 0;
@@ -81,15 +77,14 @@
   line-height: 21px;
   font-weight: bold;
   font-weight: normal;
-  color: #333333;
-    &--color {
-    color: #ffffff;
-  }
+  color: #ffffff;
+
 }
 
 .advantages__item-details--border {
   width: 256px;
   padding-bottom: 29px;
+  color: #333333;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -131,13 +126,15 @@
   .advantages__item  {
     justify-content: center;
     width: 256px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 43px;
+    padding-right: 51px;
+    padding-left: 51px;
     box-sizing: border-box;
   }
 
   .advantages__item-name {
     width: 151px;
+    margin: 0 auto;
     margin-bottom: 10px;
     font-size: 21px;
     line-height: 26px;
@@ -156,7 +153,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 40px;
   }
 
@@ -165,7 +162,7 @@
   }
 
   .advantages__number--reset {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .advantages__item-details--width {
@@ -190,10 +187,12 @@
 @media (min-width: @desktop-width) {
   .advantages__item  {
     width: 400px;
+    padding-top: 53px;
   }
 
   .advantages__item-details {
     width: 270px;
+    margin: 0 auto;
   }
 
   .advantages__item-details--border {
@@ -202,7 +201,10 @@
 
   .advantages__item--reset  {
     width: 400px;
-    padding: 47px 0 60px;
+    padding-top: 47px;
+    padding-right: 0;
+    padding-bottom: 65px;
+    padding-left: 0
   }
 
   .advantages__number {
@@ -217,6 +219,10 @@
 
   .advantages__item-details--width-desktop {
     width: 290px;
+  }
+
+  .advantages__item-details--desktop {
+    width: 230px;
   }
 
   .advantages__item-details--width {
