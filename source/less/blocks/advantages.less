@@ -3,27 +3,31 @@
 }
 
 .advantages__item {
-  padding: 60px 28px 43px;
-  background-color: #eeeeee;
+  padding-top: 38px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
   text-align: center;
-    &--bg {
-    background-color: #81b3d2 ;
-    color: #ffffff;
-  }
+  background-color: #81b3d2 ;
+  color: #ffffff;
 }
 
 .advantages__item-name {
+  width: auto;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   padding: 0;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .advantages__number {
-  margin: 0;
-  margin-bottom: 20px;
+  width: 50px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
   padding: 0;
   line-height: 21px;
   font-weight: bold;
@@ -34,48 +38,147 @@
   }
 }
 
+.advantages__item--triangle {
+  position: relative;
+  padding-top: 60px;
+}
+
+.advantages__item--triangle::before{
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  background-image: url("../img/bg-triangle.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0;
+  width: 100%;
+  height: 37px;
+  z-index: 10;
+}
+
+.advantages__item--reset {
+  padding-top: 26px;
+  padding-right: 30px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.advantages__item-name--reset {
+    color: #000000;
+}
+
 .advantages__item-details {
+  width: 265px;
   margin: 0;
   padding: 0;
   line-height: 21px;
   font-weight: bold;
   font-weight: normal;
+  color: #ffffff;
+
+}
+
+.advantages__item-details--border {
+  width: 256px;
+  padding-bottom: 29px;
   color: #333333;
-    &--color {
-    color: #ffffff;
-  }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.advantages__item-details--noborder {
+  border-bottom: 1px solid transparent;
 }
 
 .advantages__features {
   margin: 0;
-  padding-top: 40px;
-  padding-right: 50px;
+  padding-top: 35px;
   padding-bottom: 40px;
-  padding-left: 70px;
+  padding-left: 0;
   list-style: none;
 }
 
+.advantages__photo {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
+  .advantages__features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   .advantages__item-wrapper {
     display: flex;
-}
+  }
 
-.advantages__item-wrapper--reverse {
-  flex-direction: row-reverse;
-}
+  .advantages__item--triangle::before {
+      display: none;
+  }
+
+  .advantages__item-wrapper--reverse {
+    flex-direction: row-reverse;
+  }
 
   .advantages__item  {
+    justify-content: center;
     width: 256px;
+    padding-top: 43px;
+    padding-right: 51px;
+    padding-left: 51px;
     box-sizing: border-box;
-}
+  }
 
-  .advantages__photo-wrapper {
-    flex-grow: 1;
-}
+  .advantages__item-name {
+    width: 151px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .advantages__number {
+    margin-bottom: 20px;
+  }
+
+  .advantages__item-details {
+    width: 166px;
+  }
+
+  .advantages__item--reset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+
+  .advantages__item-name--reset {
+    width: 151px;
+  }
+
+  .advantages__number--reset {
+    margin-bottom: 23px;
+  }
+
+  .advantages__item-details--width {
+    width: 145px;
+  }
+
+  .advantages__item-details--border {
+    padding: 0;
+    border-bottom: none;
+  }
 
   .advantages__photo {
-    width: 100%;
+    width: 512px;
+    height: 256px;
   }
+
   .advantages__features {
     display: flex;
   }
@@ -84,10 +187,52 @@
 @media (min-width: @desktop-width) {
   .advantages__item  {
     width: 400px;
-    box-sizing: border-box;
-}
-  .advantages__photo-wrapper {
+    padding-top: 53px;
+  }
+
+  .advantages__item-details {
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  .advantages__item-details--border {
+    width: 260px;
+  }
+
+  .advantages__item--reset  {
+    width: 400px;
+    padding-top: 47px;
+    padding-right: 0;
+    padding-bottom: 65px;
+    padding-left: 0
+  }
+
+  .advantages__number {
+    margin-bottom: 20px;
+  }
+
+  .advantages__item-name--reset {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+
+  .advantages__item-details--width-desktop {
+    width: 290px;
+  }
+
+  .advantages__item-details--desktop {
+    width: 230px;
+  }
+
+  .advantages__item-details--width {
+    width: 279px;
+  }
+
+  .advantages__photo {
     width: 800px;
-    box-sizing: border-box;
+    background-image: url("../img/photo-city-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }

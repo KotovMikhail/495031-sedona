@@ -4,7 +4,7 @@
 }
 
 .main-nav__list {
-  display: none;
+  display: block;
 }
 
 .main-nav__logo {
@@ -12,25 +12,86 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 50;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  z-index: 50;
-  width: 22px;
-  height: 22px;
-  font-size: 0;
-  vertical-align: middle;
-  background: url(../img/icon-cross.svg);
-  background-repeat: repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
+  bottom: 18px;
+  right: 20px;
+  z-index: 10;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon-menu.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  border: 0;
+  background-color: #ffffff;
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 10;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255,255,255, 0.0);
+  border: none;
   cursor: pointer;
+  &:hover {
+    background-color: #81b3d2;
+  }
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (max-width: @mobile-width-only) {
+.main-nav--closed .site-list {
+    display: none;
+  }
+
+.main-nav--opened .site-list {
+    display: block;
+  }
+
+.main-nav--opened .main-nav__logo{
+    top: 96%;
+  }
+
+.main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__site-list {
+    display: block;
+  }
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -43,7 +104,16 @@
     display: flex;
     align-items: center;
   }
-  .main-nav__logo {
 
+  .main-nav--opened .main-nav__toggle {
+    display: none;
   }
+
+  .main-nav--closed .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
