@@ -78,7 +78,6 @@
   font-weight: bold;
   font-weight: normal;
   color: #ffffff;
-
 }
 
 .advantages__item-details--border {
@@ -102,6 +101,8 @@
 
 .advantages__photo {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -154,7 +155,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 42px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
   }
 
   .advantages__item-name--reset {
@@ -172,11 +173,6 @@
   .advantages__item-details--border {
     padding: 0;
     border-bottom: none;
-  }
-
-  .advantages__photo {
-    width: 512px;
-    height: 256px;
   }
 
   .advantages__features {
@@ -229,7 +225,7 @@
     width: 279px;
   }
 
-  .advantages__photo {
-    width: 800px;
+  .advantages__photo-wrapper {
+    height: auto;
   }
 }
