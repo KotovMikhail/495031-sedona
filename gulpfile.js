@@ -76,14 +76,14 @@ gulp.task("serve", function() {
 gulp.task("build", function (done) {
   run(
     "clean",
-    "clean:sprite",
     "style",
-    "images",
-    "webp",
+    "js",
     "sprite",
     "html",
-    "js",
     "copy",
+    "clean:sprite",
+    "images",
+    "webp",
     done
   );
 });
