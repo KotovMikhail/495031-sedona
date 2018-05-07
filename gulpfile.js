@@ -80,8 +80,8 @@ gulp.task("build", function (done) {
     "js",
     "sprite",
     "html",
-    "copy",
     "clean:sprite",
+    "copy",
     "images",
     "webp",
     done
