@@ -1,7 +1,6 @@
 .modal {
-  display: none;
   position: fixed;
-  top: 60%;
+  top: 50%;
   left: 50%;
   width: 320px;
   background-color: #ffffff;
@@ -10,17 +9,49 @@
   transform: translate(-50%,-50%);
 }
 
-.modal-failure__wrapper {
-  padding: 45px 56px 35px;
+.modal--map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+
+  display: none;
+  width: 940px;
+  height: 446px;
+
+  background: url("../img/popup-map.jpg");
+  -webkit-box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.modal-success__wrapper {
-  padding: 45px 53px 38px 50px;
+.modal--failure {
+  display: none;
+}
+
+.modal--success {
+  display: none;
+}
+
+.modal__wrapper--failure {
+  padding-top: 45px;
+  padding-right: 56px;
+  padding-bottom: 35px;
+  padding-left: 56px;
+}
+
+.modal__wrapper--success {
+  padding-top: 42px;
+  padding-right: 53px;
+  padding-bottom: 33px;
+  padding-left: 50px;
 }
 
 .modal__notice {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
@@ -32,27 +63,29 @@
   margin: 0;
   text-transform: uppercase;
   color: #333333;
-  &--margin {
+  &--failure {
     margin-bottom: 30px;
   }
 }
 
-.modal__button-close-wrapper {
+.modal__button--wrapper {
   background-color: #f2f2f2;
   padding: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .modal--failure {
-    top: 20%;
     width: 400px;
   }
 
-  .modal-failure__wrapper {
-    padding: 60px 63px 50px;
+  .modal__wrapper--failure {
+    padding-top: 60px;
+    padding-right: 63px;
+    padding-bottom: 50px;
+    padding-left: 63px;
   }
 
-  .modal-information-width {
+  .modal-information--failure {
     width: 280px;
   }
 
@@ -68,13 +101,15 @@
     }
   }
 
-  .modal-success__wrapper {
-    padding: 60px 116px 38px;
+  .modal__wrapper--success {
+    padding-top: 60px;
+    padding-right: 110px;
+    padding-bottom: 35px;
+    padding-left: 110px;
   }
 
-  .modal__button-close-wrapper {
+  .modal__button--wrapper {
     background-color: #f2f2f2;
     padding: 45px 95px;
   }
-
 }
