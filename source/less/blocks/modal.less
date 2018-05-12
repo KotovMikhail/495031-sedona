@@ -9,24 +9,6 @@
   transform: translate(-50%,-50%);
 }
 
-.modal--map {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 50;
-
-  display: none;
-  width: 940px;
-  height: 446px;
-
-  background: url("../img/popup-map.jpg");
-  -webkit-box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
-  box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 .modal--failure {
   display: none;
 }
@@ -51,12 +33,18 @@
 
 .modal__notice {
   margin: 0;
-  margin-bottom: 27px;
+  margin-right: auto;
+  margin-bottom: 23px;
+  margin-left: auto;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.modal__notice--failure {
+  width: 210px;
 }
 
 .modal__information {
@@ -69,8 +57,8 @@
 }
 
 .modal__button--wrapper {
-  background-color: #f2f2f2;
   padding: 20px;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
@@ -79,8 +67,8 @@
   }
 
   .modal__wrapper--failure {
-    padding-top: 60px;
-    padding-right: 63px;
+    padding-top: 55px;
+    padding-right: 60px;
     padding-bottom: 50px;
     padding-left: 63px;
   }
@@ -96,7 +84,7 @@
   .modal__notice {
     font-size: 30px;
     line-height: 26px;
-    &--lh {
+    &--failure {
       line-height: 40px;
     }
   }

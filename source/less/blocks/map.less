@@ -4,6 +4,18 @@
   height: 350px;
 }
 
+.map__image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 160px;
+  left: 147px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 #map {
   position: absolute;
   top: 0;
@@ -17,7 +29,19 @@
     width: 100%;
   }
 
+  .map__image-wrapper::before {
+    top: 162px;
+    left: 370px;
+  }
+
   .map__image {
     width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__image-wrapper::before {
+    top: 164px;
+    left: 586px;
   }
 }

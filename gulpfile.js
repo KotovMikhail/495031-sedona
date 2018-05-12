@@ -33,6 +33,12 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("htmlmin", function() {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("images", function () {
   return gulp.src("build/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -71,12 +77,6 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
-});
-
-gulp.task("htmlmin", function() {
-  return gulp.src("build/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
