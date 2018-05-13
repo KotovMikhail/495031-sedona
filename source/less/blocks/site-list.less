@@ -43,20 +43,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .site-list {
+    background-color: #ffffff;
+  }
+
   .site-list__item {
     width: 20%;
     box-shadow: none;
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
   &:last-child {
     box-shadow: none;
   }
   &:hover {
-    background-color: #ffffff;
+    background-color: transparent;
     box-shadow: none;
   }
   &:active {
-    background-color: #ffffff;
+    background-color: transparent;
   }
 }
 
@@ -66,14 +70,16 @@
 
   .site-list__link {
     padding: 15px 0;
-    color: #000000;
     font-size: 14px;
     line-height: 26px;
+    color: #000000;
+    background-color: transparent;
     &:hover {
-      background-color: #ffffff;
+      background-color: transparent;
       color: #81b3d2;
     }
     &:active {
+      background-color: transparent;
       color: #000000;
     }
   }
@@ -81,6 +87,7 @@
   .site-list__link--current {
     color: #766357;
     &:active {
+    background-color: transparent;
       opacity: 0.3;
     }
     &:hover {
