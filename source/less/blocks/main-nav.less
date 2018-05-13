@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   padding-bottom: 56px;
+  background-color: #ffffff;
 }
 
 .main-nav__list {
@@ -86,10 +87,11 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__site-list {
-    display: block;
+  .main-nav--nojs .main-nav__logo{
+    top: 267px;
   }
-  .main-nav--nojs .site-list__item {
+
+  .main-nav--nojs .site-list {
     display: block;
   }
 }
@@ -97,8 +99,8 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     position: relative;
-    padding-bottom: 0;
     margin: 0;
+    padding-bottom: 0;
   }
 
   .main-nav__list {

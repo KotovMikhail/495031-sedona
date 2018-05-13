@@ -22,9 +22,9 @@
 }
 
 .gallery__photo {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .gallery__title-description {
@@ -79,6 +79,9 @@
   .gallery__item {
     border: none;
     padding: 0;
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   .gallery__item--tablet {
@@ -178,6 +181,7 @@
   .gallery__author {
     color: #ffffff;
   }
+
   .gallery__button-like  {
     right: 38px;
     background-image: url("../img/icon-like-white.svg");
