@@ -43,20 +43,21 @@
   margin-right: auto;
   padding: 0;
   border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .control__replay-button {
   width: 18px;
   height: 22px;
   fill: #5c6870;
-  cursor: pointer;
 }
 
-.control__replay-button :hover {
+.control__replay:hover .control__replay-button {
   fill: #333333;
 }
 
-.control__replay-button :active {
+.control__replay:active .control__replay-button{
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -64,6 +65,9 @@
   height: 22px;
   margin-right: 30px;
   padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .control__subtitles-button {
@@ -71,20 +75,22 @@
   height: 22px;
   padding: 0;
   fill: #5c6870;
-  cursor: pointer;
 }
 
-.control__subtitles-button :hover {
+.control__subtitles:hover .control__subtitles-button {
   fill: #333333;
 }
 
-.control__subtitles-button :active {
+.control__subtitles:active .control__subtitles-button{
   fill: rgba(51, 51, 51, 0.3);
 }
 
 .control__fullscreen {
   height: 22px;
   padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .control__fullscreen-button {
@@ -92,14 +98,13 @@
   height: 22px;
   padding: 0;
   fill: #5c6870;
-  cursor: pointer;
 }
 
-.control__fullscreen-button :hover {
+.control__fullscreen:hover .control__fullscreen-button{
   fill: #333333;
 }
 
-.control__fullscreen-button :active {
+.control__fullscreen:active .control__fullscreen-button{
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -107,7 +112,7 @@
   .control {
     position: absolute;
     width: 648px;
-    height: 94px;
+    height: 91px;
     bottom: 0;
     left: 60px;
     padding: 0;
@@ -138,48 +143,60 @@
   .control__scale {
     position: relative;
     width: 395px;
-    top: 7px;
+    top: 5px;
     right: 0;
   }
 
   .control__toggle {
-    top: 2px;
+    top: 1px;
     left: 113px;
+  }
+
+  .control__replay {
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .control__replay-button {
     fill: #ffffff;
   }
 
+  .control__replay:hover .control__replay-button {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .control__replay:active .control__replay-button{
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .control__subtitles {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   .control__subtitles-button {
     fill: #ffffff;
+  }
+
+  .control__subtitles:hover .control__subtitles-button  {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .control__subtitles:active .control__subtitles-button{
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .control__fullscreen {
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .control__fullscreen-button {
     fill: #ffffff;
   }
 
-  .control__replay-button :hover {
+  .control__fullscreen:hover .control__fullscreen-button {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .control__replay-button :active {
-    fill: rgba(255, 255, 255, 0.3);
-  }
-
-  .control__subtitles-button :hover {
-    fill: rgba(255, 255, 255, 0.6);
-  }
-
-  .control__subtitles-button :active {
-    fill: rgba(255, 255, 255, 0.3);
-  }
-
-  .control__fullscreen-button :hover {
-    fill: rgba(255, 255, 255, 0.6);
-  }
-
-  .control__fullscreen-button :active {
+    .control__fullscreen:active .control__fullscreen-button{
     fill: rgba(255, 255, 255, 0.3);
   }
 }
@@ -188,7 +205,7 @@
   .control {
     position: absolute;
     width: 800px;
-    height: 92px;
+    height: 91px;
     left: 200px;
   }
 

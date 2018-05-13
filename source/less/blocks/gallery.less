@@ -3,7 +3,10 @@
 }
 
 .gallery__item {
-  padding: 21px 20px 0;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
   border-top: 1px solid #e5e5e5;
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
@@ -18,15 +21,21 @@
   display: block;
 }
 
+.gallery__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .gallery__title-description {
-  padding-top: 11px;
-  padding-right: 0;
-  padding-bottom: 21px;
-  padding-left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  padding-top: 17px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
 }
 
 .gallery__title {
@@ -42,7 +51,7 @@
 }
 
 .gallery__button-like {
-  background-image: url(../img/icon-like.svg);
+  background-image: url("../img/icon-like.svg");
   background-position: 0 2px;
   background-repeat: no-repeat;
   padding: 0;
@@ -50,20 +59,21 @@
 }
 
 .gallery__like-counter {
+  padding-left: 35px;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
-  padding-left: 35px;
 }
-
-
 
 @media (min-width: @tablet-width) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-bottom: 0;
+    padding-left: 60px;
   }
 
   .gallery__item {
@@ -98,20 +108,24 @@
 
   .gallery__title-description {
     position: relative;
-    padding: 16px 20px;
     flex: none;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
     background-color: #f2f2f2;
   }
 
   .gallery__button-like {
     position: absolute;
-    top: 35%;
-    right: 3%;
-    background-color: #f2f2f2;;
+    top: 26px;
+    right: 20px;
+    background-color: #f2f2f2;
+    background-position: 4px 2px;
   }
 
   .gallery__button-like--position {
-    right: 28px;
+    right: 33px;
   }
 }
 
@@ -131,7 +145,10 @@
     bottom: 0;
     right: 0;
     width: 360px;
-    padding: 16px 18px;
+    padding-top: 16px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    padding-left: 22px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
   }
@@ -141,7 +158,10 @@
     bottom: 0;
     right: 0;
     width: 1160px;
-    padding: 17px 20px;
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
   }
@@ -159,7 +179,11 @@
     color: #ffffff;
   }
   .gallery__button-like  {
-    background-image: url(../img/icon-like-white.svg);
+    right: 38px;
+    background-image: url("../img/icon-like-white.svg");
+  }
+
+  .gallery__button-like--big {
     right: 21px;
   }
 
@@ -168,11 +192,11 @@
   }
 
   .gallery__button-like--position {
-    right: 31px;
+    right: 30px;
   }
 
   .gallery__like-counter {
-    color: #ffffff;
     right: 34px;
+    color: #ffffff;
   }
 }

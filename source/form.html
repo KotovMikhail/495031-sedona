@@ -16,7 +16,7 @@
   </div>
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
@@ -24,11 +24,11 @@
           <li class="site-list__item"><a class="site-list__link site-list__link--current">Форма отзыва</a></li>
           <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
-        <a class="main-nav__logo logo" href="index.html">
+        <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
           </picture>
         </a>
       </nav>
@@ -47,11 +47,11 @@
           <ul class="form__list">
             <li class="form__item form__item--name">
               <label class="form__label form__label--name" for="name">Имя<sup>*</sup>:</label>
-              <input class="form__input form__input-text" type="text" name="name" id="name" placeholder="Петр" required="">
+              <input class="form__input form__input-text" type="text" name="name" id="name" placeholder="Петр" required>
             </li>
             <li class="form__item form__item--name">
               <label class="form__label form__label--name" for="surname">Фамилия<sup>*</sup>:</label>
-              <input class="form__input form__input-text" type="text" name="surname" id="surname" placeholder="Иванов" required="">
+              <input class="form__input form__input-text" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
             <li class="form__item form__item--name">
               <label class="form__label form__label--name" for="middle-name">Отчество:</label>
@@ -64,15 +64,15 @@
           <ul class="form__list form__list--desktop">
             <li class="form__item form__item--contacts form__item--desktop">
               <label class="form__label form__label--contacts" for="tel"><span class="form__label-hidden">Контактный</span>телефон<sup>*</sup>:</label>
-              <div class="input-wrapper">
-                <input class="form__input form__input--contacts" type="tel" name="tel" id="tel" placeholder="Введите телефон" required="">
+              <div class="form__input-wrapper">
+                <input class="form__input form__input--contacts" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
                 <div class="form__input-icon-phone"></div>
               </div>
             </li>
             <li class="form__item form__item--contacts form__item--desktop">
               <label class="form__label form__label--contacts" for="email">Электронная почта<sup>*</sup>:</label>
-              <div class="input-wrapper">
-                <input class="form__input form__input--contacts" type="email" name="email" id="email" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите e-mail" required="">
+              <div class="form__input-wrapper">
+                <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                 <div class="form__input-icon-mail"></div>
               </div>
             </li>
@@ -119,7 +119,7 @@
         <div class="form__emotions-wrapper">
           <label class="form__label form__label--textarea" for="emotions"><span class="form__text-stroke">Опишите свои эмоции:</span></label>
           <textarea class="form__review-field" name="emotions" id="emotions" cols="20" rows="4" placeholder="Опишите подробно все свои восторги "></textarea>
-          <button class="button button__send-form" type="submit">Отправить отзыв</button>
+          <button class="button button--send" type="submit">Отправить отзыв</button>
           <small class="form__legend-sup"><sup>*</sup> &ndash; Обязательные поля</small>
         </div>
       </form>
@@ -143,7 +143,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg class="copyright__link-logo" width="27px" height="34px">
             <use xlink:href="#icon-build-htmlacademy"></use>
@@ -152,26 +152,26 @@
       </div>
     </footer>
     <section class="modal modal--failure">
-      <div class="modal-failure__wrapper">
+      <div class="modal__wrapper modal__wrapper--failure">
         <h2 class="visually-hidden">Поля формы незаполненны!</h2>
-        <p class="modal__notice modal__notice--lh">Что-то пошло не так!</p>
-        <p class="modal__information modal__information--margin modal-information-width">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button button-ok" type="submit">Ok</button>
+        <p class="modal__notice modal__notice--failure">Что-то пошло не так!</p>
+        <p class="modal__information modal__information--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button button--ok" type="submit">Ok</button>
       </div>
     </section>
     <section class="modal modal--success">
-      <div class="modal-success__wrapper">
+      <div class="modal__wrapper modal__wrapper--success">
         <h2 class="visually-hidden">Поля формы заполнены!</h2>
         <p class="modal__notice">Ваш отзыв отправлен!</p>
-        <p class="modal__information">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="modal__information">Спасибо за ваше участие, ваш отзыв уже поступил к нам.</p>
+        <p class="modal__information">В ближайшее время мы опубликуем его на сайте.</p>
       </div>
-      <div class="modal__button-close-wrapper">
-        <button class="button button-close" type="reset">Закрыть окно</button>
+      <div class="modal__button--wrapper">
+        <button class="button button--close" type="reset">Закрыть окно</button>
       </div>
     </section>
   </div>
-  <script src="js/menu.js"></script>
-  <script src="js/picturefill.js"></script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>

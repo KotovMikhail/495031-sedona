@@ -1,8 +1,37 @@
+.map__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.map__image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 160px;
+  left: 147px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 350px;
+}
+
 @media (min-width: @tablet-width) {
   .map__image-wrapper {
-    display: block;
     width: 100%;
-    height: 350px;
+  }
+
+  .map__image-wrapper::before {
+    top: 162px;
+    left: 370px;
   }
 
   .map__image {
@@ -11,5 +40,8 @@
 }
 
 @media (min-width: @tablet-width) {
-
+  .map__image-wrapper::before {
+    top: 164px;
+    left: 586px;
+  }
 }

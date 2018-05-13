@@ -13,14 +13,17 @@
   box-sizing: border-box;
 }
 
-.button-search--disabled {
+.button--disabled {
   background-color: #e5e5e5;
 }
 
 
-.button__send-form {
+.button--send {
   width: 280px;
-  padding: 17px 30px;
+  padding-top: 17px;
+  padding-right: 30px;
+  padding-bottom: 17px;
+  padding-left: 30px;
   text-decoration: none;
   font-size: 21px;
   box-sizing: border-box;
@@ -34,9 +37,12 @@
   }
 }
 
-.button-search {
+.button--search {
   width: 280px;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0;
   text-decoration: none;
   font-size: 21px;
   box-sizing: border-box;
@@ -50,27 +56,47 @@
   }
 }
 
-.button-ok {
-  font-size: 18px;
-  padding: 20px 78px;
+.button--ok {
+  font-size: 21px;
+  padding-top: 17px;
+  padding-right: 78px;
+  padding-bottom: 17px;
+  padding-left: 78px;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.button-close {
+.button--close {
   width: 100%;
-  padding: 17px 65px;
-  font-size: 18px;
+  padding-top: 17px;
+  padding-right: 65px;
+  padding-bottom: 17px;
+  padding-left: 65px;
+  font-size: 21px;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .button-ok {
+  .button--ok {
     width: 100%;
   }
 
-  .button-search {
+  .button--search {
     width: 460px;
   }
 
-  .button__send-form {
+  .button--send {
     width: 50%;
   }
 }

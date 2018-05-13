@@ -1,6 +1,6 @@
 .page-main__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -13,7 +13,7 @@
 }
 
 .page-main__title--photo {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .page-main__title--form {
@@ -24,15 +24,19 @@
   margin: 0;
   padding: 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: normal;
   color: #333333;
   text-transform: uppercase;
 }
 
+.page-main__title-description--photo {
+  line-height: 24px;
+}
+
 .page-main__form {
-  margin-bottom: 44px;
-  padding-top: 20px;
+  margin-bottom: 36px;
+  padding-top: 18px;
 }
 
 .page-main__title-description--form {
@@ -40,17 +44,26 @@
 }
 
 .page-main__title-wrapper {
-  padding: 39px 30px 25px;
+  padding-top: 39px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
   text-align: center;
 }
 
 .page-main__title-wrapper--form {
-  padding: 38px 20px 15px;
+  padding-top: 36px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .page-main__title-wrapper--photo {
-    padding: 38px 25px 25px;
+  padding-top: 36px;
+  padding-right: 25px;
+  padding-bottom: 29px;
+  padding-left: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -65,30 +78,35 @@
   }
 
   .page-main__title-wrapper--photo {
-    padding-top: 75px;
+    padding-top: 73px;
     padding-bottom: 70px;
   }
 
   .page-main__title-wrapper--form {
-    border-bottom: none;
-    padding-top: 75px;
+    padding-top: 72px;
     padding-bottom: 75px;
+    border-bottom: none;
   }
 
   .page-main__title {
-    font-size: 30px;
     width: 400px;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .page-main__title--photo {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .page-main__title--form {
     margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
   }
 
-  .page-main__description--photo {
+  .page-main__title-description--photo {
     width: 430px;
   }
 
@@ -111,18 +129,35 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-main {
+    background-color: #ffffff;
+  }
+
   .page-main__form {
     padding: 0 120px;
   }
 
   .page-main__title {
     width: 446px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+  }
+
+  .page-main__title--photo {
+    margin-bottom: 27px;
+  }
+
+  .page-main__title--form {
+    margin-bottom: 25px;
+  }
+
+  .page-main__title-wrapper {
+    padding-top: 47px;
+    padding-bottom: 52px;
   }
 
   .page-main__title-wrapper--photo {
-    padding-top: 112px;
-    padding-bottom: 72px;
+    padding-top: 110px;
+    padding-bottom: 73px;
   }
 
   .page-main__title-wrapper--form {
