@@ -16,7 +16,7 @@
   </div>
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
@@ -151,21 +151,19 @@
             <button class="control__toggle"><span class="visually-hidden">Перемотать видео</span></button>
           </div>
           <div class="control__options">
-            <button class="control__replay">
+            <button class="control__replay" aria-label="Повтор">
               <svg class="control__replay-button" width="16px" height="20px">
-                <title>Повтор</title>
+                <title></title>
                 <use xlink:href="#icon-build-video-replay"></use>
               </svg>
             </button>
-            <button class="control__subtitles">
+            <button class="control__subtitles" aria-label="Субтитры">
               <svg class="control__subtitles-button" width="32px" height="20px" viewBox="0 0 32 20">
-                <title>Субтитры</title>
                 <use xlink:href="#icon-build-video-subtitles"></use>
               </svg>
             </button>
-            <button class="control__fullscreen">
+            <button class="control__fullscreen" aria-label="На весь экран">
               <svg class="control__fullscreen-button" width="20px" height="20px" viewBox="0 0 20 20">
-                <title>На весь экран</title>
                 <use xlink:href="#icon-build-video-fullscreen"></use>
               </svg>
             </button>

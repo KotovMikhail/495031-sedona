@@ -13,18 +13,6 @@
   box-sizing: border-box;
 }
 
-.button--disabled {
-  width: 280px;
-  padding-top: 16px;
-  padding-right: 0;
-  padding-bottom: 16px;
-  padding-left: 0;
-  text-decoration: none;
-  font-size: 21px;
-  box-sizing: border-box;
-  background-color: #e5e5e5;
-}
-
 .button--send {
   width: 280px;
   padding-top: 17px;
@@ -102,13 +90,21 @@
   }
 }
 
+.button--disabled {
+  width: 280px;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0;
+  text-decoration: none;
+  font-size: 21px;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
 @media (min-width: @tablet-width) {
   .button--ok {
     width: 100%;
-  }
-
-  .button--disabled {
-    width: 460px;
   }
 
   .button--search {
@@ -117,5 +113,9 @@
 
   .button--send {
     width: 50%;
+  }
+
+  .button--disabled {
+    width: 460px;
   }
 }
