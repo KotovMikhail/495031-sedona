@@ -10,21 +10,26 @@
 
 .control__scale {
   height: 3px;
-  background-color: rgba(255, 255,255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .control__toggle {
   position: absolute;
   width: 3px;
   height: 3px;
-  top: 19px;
-  left: 57px;
+  top: 20px;
+  left: 58px;
   padding: 0;
   background-color: #ffffff;
-  border: 4px solid #fff;
+  border: 4px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.35);
   cursor: pointer;
+
+  &:focus {
+    outline: 2px dashed #ffffff;
+    outline-offset: 2px;
+  }
 }
 
 .control__options {
@@ -57,7 +62,7 @@
   fill: #333333;
 }
 
-.control__replay:active .control__replay-button{
+.control__replay:active .control__replay-button {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -81,7 +86,7 @@
   fill: #333333;
 }
 
-.control__subtitles:active .control__subtitles-button{
+.control__subtitles:active .control__subtitles-button {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -100,11 +105,11 @@
   fill: #5c6870;
 }
 
-.control__fullscreen:hover .control__fullscreen-button{
+.control__fullscreen:hover .control__fullscreen-button {
   fill: #333333;
 }
 
-.control__fullscreen:active .control__fullscreen-button{
+.control__fullscreen:active .control__fullscreen-button {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -124,12 +129,12 @@
     display: flex;
     align-items: center;
     top: 35px;
-    right: 3px;
+    right: 0;
     padding-top: 0;
     padding-right: 40px;
     padding-bottom: 0;
-    padding-left: 40px;
-    background-color: rgba(255, 255, 255, 0.0);
+    padding-left: 37px;
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .control__range {
@@ -137,7 +142,7 @@
     top: 40px;
     right: 161px;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.0);
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .control__scale {
@@ -148,7 +153,7 @@
   }
 
   .control__toggle {
-    top: 1px;
+    top: 3px;
     left: 113px;
   }
 
@@ -164,7 +169,7 @@
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .control__replay:active .control__replay-button{
+  .control__replay:active .control__replay-button {
     fill: rgba(255, 255, 255, 0.3);
   }
 
@@ -176,11 +181,11 @@
     fill: #ffffff;
   }
 
-  .control__subtitles:hover .control__subtitles-button  {
+  .control__subtitles:hover .control__subtitles-button {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .control__subtitles:active .control__subtitles-button{
+  .control__subtitles:active .control__subtitles-button {
     fill: rgba(255, 255, 255, 0.3);
   }
 
@@ -196,7 +201,7 @@
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .control__fullscreen:active .control__fullscreen-button{
+  .control__fullscreen:active .control__fullscreen-button {
     fill: rgba(255, 255, 255, 0.3);
   }
 }

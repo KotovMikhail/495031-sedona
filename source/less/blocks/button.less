@@ -13,11 +13,6 @@
   box-sizing: border-box;
 }
 
-.button--disabled {
-  background-color: #e5e5e5;
-}
-
-
 .button--send {
   width: 280px;
   padding-top: 17px;
@@ -28,9 +23,11 @@
   font-size: 21px;
   box-sizing: border-box;
   background-color: #81b3d2;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
@@ -47,9 +44,11 @@
   font-size: 21px;
   box-sizing: border-box;
   background-color: #81b3d2;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
@@ -62,9 +61,11 @@
   padding-right: 78px;
   padding-bottom: 17px;
   padding-left: 78px;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
@@ -78,13 +79,27 @@
   padding-bottom: 17px;
   padding-left: 65px;
   font-size: 21px;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
+}
+
+.button--disabled {
+  width: 280px;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0;
+  text-decoration: none;
+  font-size: 21px;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
@@ -98,5 +113,9 @@
 
   .button--send {
     width: 50%;
+  }
+
+  .button--disabled {
+    width: 460px;
   }
 }

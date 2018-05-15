@@ -44,7 +44,7 @@
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
         <ul class="gallery__list">
-          <li class="gallery__item gallery__item--tablet gallery__item--big">
+          <li class="gallery__item gallery__item--big">
             <a class="gallery__photo-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
@@ -98,7 +98,7 @@
                 <img class="gallery__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
               </picture>
             </a>
-            <div class="gallery__title-description">
+            <div class="gallery__title-description gallery__title-description--bg">
               <p class="gallery__title">Дорога на север</p>
               <cite class="gallery__author">Автор фото: Петр</cite>
               <button class="button gallery__button-like">
@@ -148,20 +148,21 @@
           <div class="control__range">
             <div class="control__scale">
             </div>
-            <div class="control__toggle"></div>
+            <button class="control__toggle"><span class="visually-hidden">Перемотать видео</span></button>
           </div>
           <div class="control__options">
-            <button class="control__replay">
+            <button class="control__replay" aria-label="Повтор">
               <svg class="control__replay-button" width="16px" height="20px">
+                <title></title>
                 <use xlink:href="#icon-build-video-replay"></use>
               </svg>
             </button>
-            <button class="control__subtitles">
+            <button class="control__subtitles" aria-label="Субтитры">
               <svg class="control__subtitles-button" width="32px" height="20px" viewBox="0 0 32 20">
                 <use xlink:href="#icon-build-video-subtitles"></use>
               </svg>
             </button>
-            <button class="control__fullscreen">
+            <button class="control__fullscreen" aria-label="На весь экран">
               <svg class="control__fullscreen-button" width="20px" height="20px" viewBox="0 0 20 20">
                 <use xlink:href="#icon-build-video-fullscreen"></use>
               </svg>
